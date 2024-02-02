@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: rgba(115, 159, 160, 0.463);
+}
+#navbar{
+    display: flex;
+    position: sticky;
+    top: 0;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #ffebd6;
+}
+.menu li a{
+    padding: 10px;
+    text-decoration: none;
+    padding: 10px;
+}
+.menu{
+    margin: 10px;
+    color: rgb(148, 7, 148);
+    display: flex;
+    justify-content: center;
+    font-size: large;
+}
+#clg{
+    color: red;
+    font-size: xx-large;
+    padding: 10px;
+    margin-inline: 20px;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: darkgreen;
+}
+#tec{
+    width: 50vw;
+    margin: 20px 0px;
+}
+header>h2{
+    padding: 0.7rem 1.5rem;
+    border: 2px solid rgb(200, 0, 255);
+    border-radius: 7.5px;
+    background-color: rgb(221, 183, 255);
+    font-family: 'Varela Round', sans-serif;
+    margin: 1rem;
+    cursor: pointer;
+    color: rgb(0, 9, 137);
+}
+header>div{
+    text-align: center;
+}
+#eventlist{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.events{
+    height: 150px;
+    width: 350px;
+    background: white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: x-large;
+    color: rgb(132, 8, 33);
+    margin: 10px;
+}
+#box11{
+    justify-content: center;
+}
+#showmore{
+    text-decoration: none;
+    color: rgb(0, 139, 225);
+    padding: 10px;
+    margin: 5px;
+}
+.events>p{
+    padding: 10px;
+    margin: 5px;
+}
+.events>button{
+    padding: 0.25rem 0.5rem;
+    margin-inline-end: 20px;
+    border: 1.5px inset orange;
+    border-radius: 5px;
+    background-color: orangered;
+    font-size: 11px;
+    font-weight: bold;
+    font-family: 'Varela Round', sans-serif;
+    color: wheat;
+    cursor: pointer;
+}
+.events:hover{
+    background: #40215553;
+    box-shadow: 4px 8px rgb(143, 98, 255);
+    color: white;
+    text-shadow: 2px 2px 5px rgb(39, 12, 68);
+    transition: all 250ms;
+}
+.events>button:hover{
+    background-color: wheat;
+    color: orangered;
+}
+#box11:hover{
+    background-color: rgb(218, 225, 255);
+    text-shadow: 2px 2px 5px rgb(251, 253, 235);
+}
+.menu li:hover{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+.menu li a:hover{
+    color: rgb(10, 213, 125);
+}
+section{
+    background: rgb(212, 255, 205);
+}
+section h1{
+    text-align: center;
+    padding: 10px;
+}
+#details{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#contacts{
+    margin: 20px;
+}
+#social{
+    display: flex;
+}
+.socialmedia img{
+    width: 5vw;
+    cursor: pointer;
+    margin: 10px;
+}
+footer div{
+    background: white;
+    text-align: center;
+}
+@media only screen and (max-width: 625px){
+    #navbar{
+        flex-direction: column;
+        align-items: center;
+    }
+    #clg{
+        font-size: 23.5px;
+    }
+    header>h2{
+        font-size: larger;
+    }
+    section h1{
+        padding: 5px;
+    }
+    #contacts{
+        font-size: small;
+        margin: 10px;
+    }
+    .socialmedia img{
+        width: 7vw;
+        margin: 5px;
+    }
+    footer div{
+        font-size: x-small;
+    }
+}
+@media only screen and (max-width: 740px){
+    .events{
+        width: 90%;
+    }
+}
